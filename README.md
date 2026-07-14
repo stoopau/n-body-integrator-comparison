@@ -11,6 +11,8 @@ Some context. Euler integration is the simplest numerical technique used to appr
 
 ## Results
 As a result of switching from Euler integration to Leapfrog integration, I have reduced energy drift by a factor of ~1000x over the course of a 10-year, and 200-year, 6-body simulation. Both  integrators show bounded (non-secular) oscillation at these timescales and step sizes. For this experiment, I used a simulation time, dt (how long each step is), paired with the actual steps (how many dt), to accurately simulate the orbital path of a 6 body system. The dt value I used was 86400, which is the amount of seconds in 1 day, along with 3650 steps for 10 years, and 73000 steps for 200 years. 
+![Leapfrog energy drift](results/leapfrog_energy_drift.png) , 
+![Euler energy drift](results/euler_energy_drift.png)
 
 ## How to run
 ​```
